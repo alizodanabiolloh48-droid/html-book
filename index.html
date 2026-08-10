@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Китоби HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Шапка (Header) -->
+    <header class="header">
+        <div class="top-bar">
+            <!-- Тугмаи чап: Социалҳо (Instagram, Telegram, WhatsApp) -->
+            <button class="menu-btn" id="socialToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <h1 class="main-title">📖 Китоби HTML</h1>
+
+            <!-- Тугмаи рост: Категорияҳо ([ҳамаш], [html], [css], [js], [py]) -->
+            <button class="menu-btn" id="categoryToggle">
+                <i class="fas fa-layer-group"></i>
+            </button>
+        </div>
+
+        <!-- Менюи тугмаҳои чап (Сайтҳо) -->
+        <div class="dropdown-menu" id="socialDropdown">
+            <a href="https://www.instagram.com/nabijon_9km?igsh=dmZhZzFubjV2aWdn" target="_blank" class="social-btn">Instagram</a>
+            <a href="https://t.me/khamai_bozikhoi_mod" target="_blank" class="social-btn">Telegram</a>
+            <a href="https://wa.me/009229674" target="_blank" class="social-btn">WhatsApp</a>
+        </div>
+
+        <!-- Менюи тугмаҳои рост (Категорияҳо) -->
+        <div class="dropdown-menu dropdown-right" id="categoryDropdown">
+            <button class="cat-btn active" data-category="all">ҳамаш</button>
+            <button class="cat-btn" data-category="html">html</button>
+            <button class="cat-btn" data-category="css">css</button>
+            <button class="cat-btn" data-category="js">js</button>
+            <button class="cat-btn" data-category="py">py</button>
+        </div>
+
+        <!-- Ҷустуҷӯ -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Ҷустуҷӯ...">
+        </div>
+    </header>
+
+    <!-- Мундариҷаи кортҳо -->
+    <main class="container" id="cardsContainer">
+        <!-- Кортҳо аз файли script.js гузошта мешаванд -->
+    </main>
+
+    <!-- Файлҳои JS -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
